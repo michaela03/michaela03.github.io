@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/dist/jquery.validate.min.js"></script>
+    <script src="javascript/app.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="pictures/l-icon.png">
+</head>
+<body>
+    <nav class="nav">
+        <img id="logo" src="pictures/l-icon.png">
+    <ul class="nav__list">
+    <li class="nav__listlogo"><a href="index.html">MV</a></li>
+    <li class="nav__listitem">Menu & order
+        <ul class="nav__listitemdrop">
+            <li><a href="menu.html">See our 3 course menu</a></li>
+        </ul>
+    </li>
+    <li class="nav__listitem"><a href="contacts.html">Contacts & about us</a></li>
+    </ul>
+</nav>
+<main>
+
+<form action="menu.html" id="menuForm" method="post">
+<article>Choose a soup:</article>
+<section name="soups" class="menuSoup">
+    <input type="radio" id="chichkenSoup" name="soup" value="chicken soup">
+    <label for="chichkenSoup"><img src="pictures/chickenSoup.webp" class="menuImage"><br>Chicken soup</label><br>
+    <input type="radio" id="asianSoup" name="soup" value="asian noodle">
+    <label for="asianSoup"><img src="pictures/AsianNoodle.jpg" class="menuImage"><br>Asian noodle soup</label><br>
+    <input type="radio" id="tomatoSoup" name="soup" value="creamy tomato"> 
+    <label for="tomatoSoup"><img src="pictures/tomatoSoup.jpg" class="menuImage"><br>Creamy Tomato Soup</label><br>
+    <input type="radio" id="taratorSoup" name="soup" value="tarator">
+    <label for="taratorSoup"><img src="pictures/tarator.jpg" class="menuImage"><br>Tarator</label><br>
+</section>
+<article>Choose main course:</article>
+<section name="main-dishes" class="menuMain">
+    <input type="radio" id="salmonFish" name="mainDish" value="cedar-plank">
+    <label for="salmonFish"><img src="pictures/salmonFish.jpg" class="menuImage"><br>Cedar-Plank Salmon</label><br>
+
+    <input type="radio" id="shrimp" name="mainDish" value="shrimp">
+    <label for="shrimp"><img src="pictures/shrimp.jpeg" class="menuImage"><br>Habanero Shrimp</label><br>
+
+    <input type="radio" id="paella" name="mainDish" value="paella">
+    <label for="paella"><img src="pictures/paella.jpg" class="menuImage"><br>Paella /for 2 people/</label><br>
+
+    <input type="radio" id="garlicPasta" name="mainDish" value="garlic-pasta">
+    <label for="garlicPasta"><img src="pictures/pasta.jpg" class="menuImage"><br>Garlic pasta</label><br>
+</section>
+<section  name="main-dishes" class="menuMain">
+    <input type="radio" id="basilPasta" name="mainDish" value="basil-pasta">
+    <label for="basilPasta"><img src="pictures/basilPasta.jpg" class="menuImage"><br>Basil-pesto pasta</label><br>
+    
+    <input type="radio" id="skirtStake" name="mainDish" value="steak">
+    <label for="skirtStake"><img src="pictures/MarinatedSteak.jpg" class="menuImage"><br>Marinated Skirt Steak</label><br>
+    
+    <input type="radio" id="smokedBrisket" name="mainDish" value="brisked">
+    <label for="smokedBrisket"><img src="pictures/SmokedBrisket.jpg" class="menuImage"><br>Smoked brisked</label><br>
+    
+    <input type="radio" id="beef" name="mainDish" value="beef">
+    <label for="beef"><img src="pictures/slowCooked.jpg" class="menuImage"><br>Slow cooked beef</label><br>
+
+</section>
+<article>Choose dessert:</article>
+<section name="desserts" class="menuDesserts">
+    <input type="radio" id="raspberry" name="dessert" value="Raw raspberry slice">
+    <label for="raspberry"><img src="pictures/raspberry.jpg" class="menuImage"><br>Raw raspberry slice</label><br>
+
+    <input type="radio" id="lavaCake" name="dessert" value="lava cake">
+    <label for="lavaCake"><img src="pictures/lavaCake.jpg" class="menuImage"><br>Lava cake</label><br>
+
+    <input type="radio" id="fruitMousse" name="dessert" value="fruit mousse">
+    <label for="fruitMousse"><img src="pictures/fruitMousse.jpg" class="menuImage"><br>Fruit mousse</label><br>
+    
+    <input type="radio" id="cheesecake" name="dessert" value="Cheesecake">
+    <label for="cheesecake"><img src="pictures/cheesecake.jpeg" class="menuImage"><br>Cheesecake</label><br>
+</section>
+<section class="orderInfo">
+<button type="submit" >
+<a href="checkout.html" onclick="return validateMenu()">Go to checkout</a>
+ </button>
+</section>
+
+</form>
+</main>
+<footer>
+    <div class="footer-body">
+        <div class="footer__text">
+        Don't forget to leave a review for us on some of the following sites:
+        </div>
+        <div class="footer__images">
+            <a href="https://www.tripadvisor.com/UserReview" target="_blank">
+            <img class="footer__Image" id="footerPic1" src="pictures/tripadvisor.png">
+            </a>
+            <a href="https://www.google.com/maps/" target="_blank">
+            <img class="footer__Image" id="footerPic2" src="pictures/maps.webp">
+            </a>
+        </div>
+    </div> 
+</footer>
+</body>
+</html>

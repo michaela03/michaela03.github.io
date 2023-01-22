@@ -1,0 +1,255 @@
+html{
+  min-width: fit-content;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans',sans-serif;
+}
+body{
+  background-color: #cfab72;
+  margin: 0;
+}
+#logo{
+  height: 70px;
+  margin-left: 30px;
+  background-color: #99582a;
+}
+.nav{
+  display: flex;
+  background-color: #99582a;
+  position: sticky;
+  height: 70px;
+}
+.nav__list{
+  background-color: #99582a;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  margin: 0 auto;
+  padding:0 50px;
+}
+.nav__listitem{
+  display: flex;
+  color:#432818;
+  background-color: #99582a;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  font-family:'Gill Sans';
+  font-size: 25px;
+  cursor: pointer;
+  height: 70px;
+  padding:25px 18px;
+}
+.nav__listitem:hover{
+  color: #ffe6a7;
+}
+.nav a{
+  background-color:#99582a;
+  float: left;
+  font-family:'Gill Sans';
+  font-size: 25px;
+  color: #432818;
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  text-decoration: none;
+}
+.nav a:hover{
+  color: #ffe6a7;
+}
+.nav__listitemdrop a:hover{
+  color: #ffe6a7;
+}
+.nav__listitem:hover ul{
+  opacity: 1;
+  visibility: visible;  
+}
+.nav__listitemdrop{
+  position: absolute;
+  background-color:#99582a;
+  color: #432818;
+  list-style: none;
+  top:70px;
+  left: -16px;
+  padding:12px 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  font-family: inherit; 
+  opacity: 0;
+  visibility: hidden;
+  min-width: 160px;
+}
+.nav__listitemdrop a{
+  background-color:#99582a;
+  float: none;
+  color: #432818;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#map{
+  margin: 20px;
+}
+aside{
+  font-size: 23px;
+  color: #432818;
+}
+span{
+  font-weight: bold;
+  padding-left:120px;
+}
+#address{
+  float: left;
+  padding-bottom: 100px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact{
+  width: 400px;
+  margin-top: 5px;
+  padding: 10px;
+  background: #ffe6a7;
+  border: 2px solid #99582a;
+}
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #99582a;
+  color: #ffe6a7;
+  font-family: Tahoma;
+  margin: 40px;
+  font-size: 25px;
+  padding: 10px 10px 2px 10px;
+  border-radius: 10px;
+}
+h3{
+  color:#432818;
+  padding-bottom: 10px;
+}
+p{
+  padding: 10px 25px;
+}
+footer{
+  margin-top: 5px;
+  background-color: #99582a91;
+}
+footer .footer-body {
+  max-width: 1400px;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.footer__text{
+  text-align:  center;
+  font-size: 25px;
+  color: #432818;
+  padding:45px 2px;
+  margin-left: 20px;
+  text-decoration:  #ffb8056f underline;
+}
+.footer__images{
+  padding-top: 5px;
+  display: flex;
+  float: right;
+}
+.footer__Image{
+  width: auto;
+  height: 80px;
+  margin-left: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #iframe{
+      width: 650px;
+      height: 400px;
+  }
+  .nav__listitem {
+      padding: 20px 18px;
+  }
+  #address {
+      padding-bottom: 40px;
+  }
+  .aboutUs {
+      font-size: 22px;
+  }
+  .nav {
+      height: 77px;
+  }
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+  #iframe{
+      width: 500px;
+      height: 300px;
+  }
+  #map{
+      margin: 0px;;
+  }
+  .nav__listitem {
+      padding: 10px 18px;
+      font-size: 20px;
+  }
+  .nav a {       
+      font-size: 20px;
+  }
+  .aboutUs{
+      font-size: 22px;
+  }
+  .footer__Image {
+      margin-left: 30px;
+  }
+  .footer__text {
+      text-align: inherit;
+      font-size: 25px;
+  }
+  #address{
+      padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  #iframe{
+      height: 500px;
+      width: 500px;
+  }   
+  .nav {
+      height: 80px;
+  }
+  .nav__listitem {
+      padding: 15px 18px;
+      font-size: 23px;
+  }
+  .nav a {       
+      font-size: 23px;
+  }
+  #address{
+      padding-bottom: 50px;
+  }
+  #logo {
+      height: 80px;
+      margin-left: 20px;
+  }
+  .footer__Image {
+      margin-left: 30px;
+  }
+  .footer__text {
+      text-align: inherit;
+      font-size: 25px;
+  }
+}

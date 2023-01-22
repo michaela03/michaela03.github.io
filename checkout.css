@@ -1,0 +1,34 @@
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #99582a !important;
+ 
+}
+
+.pageBackgroung{
+  background-color: #dbb36572;
+}
+
+.textColor{
+  color: #432818;
+  text-decoration: none;
+}
+
+.textColorF{
+  color: #cfab72;
+  text-decoration: none;
+}
+
+.error{
+  color: red;
+}
+
+
+.checkoutBtn {
+  border-color: #432818!important;
+}
+

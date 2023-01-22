@@ -1,0 +1,369 @@
+html{
+  min-width: fit-content;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans',sans-serif;
+}
+body{
+  background-color: #eeddba;
+  margin: 0;
+
+}
+header{
+    height: 30px;
+    text-align: center;
+    color:#ddbd7f;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    padding-top: 2px;
+    background-color: #99582a;
+}
+#logo{
+    height: 70px;
+    margin-left: 30px;
+    background-color: #99582a;
+}
+.nav{
+    display: flex;
+    background-color: #99582a;
+    position: sticky;
+    height: 70px;
+}
+.nav__list{
+    background-color: #99582a;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    max-width: 1300px;
+    align-items: center;
+    margin: 0 auto;
+    padding:0 50px;
+}
+.nav__listlogo{
+    background-color: #99582a;
+    color: #432818; 
+    display: flex;
+    height: 70px;
+    list-style: none;
+    align-items: center;
+    margin-right: auto;
+    padding:25px 0px;
+    cursor: pointer;
+    font-family:'Gill Sans';
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav__listitem{
+    display: flex;
+    color:#432818;
+    background-color: #99582a;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    font-family:'Gill Sans';
+    font-size: 25px;
+    cursor: pointer;
+    height: 70px;
+    padding:25px 18px;
+  }
+  .nav__listitem:hover{
+    color: #ffe6a7;
+  }
+  .nav a{
+    background-color:#99582a;
+    float: left;
+    font-family:'Gill Sans';
+    font-size: 25px;
+    color: #432818;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    text-decoration: none;
+  }
+  .nav a:hover{
+  color: #ffe6a7;
+  }
+  .nav__listitemdrop a:hover{
+    color: #ffe6a7;
+  }
+  .nav__listitem:hover ul{
+  opacity: 1;
+  visibility: visible;  
+  }
+  .nav__listitemdrop{
+  position: absolute;
+  background-color:#99582a;
+  color: #432818;
+  list-style: none;
+  top:70px;
+  left: -16px;
+  padding:12px 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  font-family: inherit; 
+  opacity: 0;
+  visibility: hidden;
+  min-width: 160px;
+  }
+  .nav__listitemdrop a{
+  background-color:#99582a;
+  float: none;
+  color: #432818;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+.menuImage{
+  width: 200px;
+  height: 200px;
+}
+.menuSoup{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+article{
+  text-align: center;
+  color: #432818;
+  font-family:'Gill Sans'; 
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+label{
+  text-align: center;
+  font-size: 20px;
+  color: #303030;
+}
+input[type=radio] {
+  height:20px; 
+  width:40px; 
+  vertical-align: middle;
+  margin-left: 2%;
+}
+.menuMain {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  width: 100%;
+}
+.menuDesserts{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+button{
+  width: 200px;
+  height: 70px;
+  background-color: #99582a;
+  margin-top: 30px;
+  border-radius: 5px;
+  border-color:#99582a ;
+}
+button a{
+  text-decoration: none;
+  color: #ffe6a7;
+  font-size: 25px;
+
+}
+button a:hover{
+  color:#ffb805;
+}
+.orderInfo {
+  text-align: justify;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderInfo label{
+  color: #432818;
+  font-size: 16px;
+}
+.orderInfo h1{
+  font-size: 30px;
+  text-align: center;
+  color: #637e92;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.orderInfo input {
+  width: 50%;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  text-align: left;
+}
+footer{
+  margin-top: 5px;
+  background-color: #99582a91;
+}
+footer .footer-body {
+  max-width: 1400px;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.footer__text{
+  text-align:  center;
+  font-size: 25px;
+  color: #432818;
+  padding:45px 2px;
+  margin-left: 20px;
+  text-decoration:  #ffb8056f underline;
+}
+.footer__images{
+  padding-top: 5px;
+  display: flex;
+  float: right;
+}
+.footer__Image{
+  width: auto;
+  height: 80px;
+  margin-left: 100px;
+}
+ 
+@media only screen and (min-width:1024px) {
+  .menuSoup {
+    padding-right: 30px;
+}
+  .menuMain {
+    padding-right: 30px;
+}
+.menuDesserts {
+  padding-right: 30px;
+}
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menuSoup{
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  .menuMain{
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  article{
+    padding-top: 10px;
+  }
+  .menuDesserts{
+    padding-right: 20px;
+  }
+  .footerImage {
+    margin-left: 30px;
+  }
+.footertext {
+  padding: 30px 2px;
+  margin-left: 2px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .menuSoup{
+    width: 98%;
+  }
+  .menuMain{
+    width: 98%;
+  }
+  .menuDesserts{
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 345px) and (max-width:479px){
+  form{
+    margin-top: 70px;
+  }
+  .menuSoup{
+    width: 95%;
+  }
+  .menuMain{
+    width: 95%;
+  }
+  .menuDesserts{
+    width: 95%;
+  }
+  .nav{
+    min-height: 150px;
+  }
+  .navlist{
+    min-height: 90px;
+  }
+  #logo{
+    min-height: 150px;
+  }
+  .navlistitem {
+    font-size: 45px;
+    padding: 5px 18px;
+  }
+  .nav a { 
+    font-size: 45px;
+  }
+  .orderInfo label {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width:344px){
+  form{
+    margin-top: 60px;
+  }
+  .menuSoup{
+    width: 95%;
+  }
+  .menuMain{
+      width: 95%;
+  }
+  .menuDesserts{
+    width: 95%;
+  }
+  .footer-body{
+    min-height: 350px;
+  }
+  .footertext {
+    text-align: left;
+    font-size: 35px;
+  }
+  .footerImage {
+    width: auto;
+    height: 130px;
+    margin-left: 50px;
+  }
+  .nav{
+    min-height: 150px;
+  }
+  .navlist{
+    min-height: 90px;
+  }
+  #logo{
+    min-height: 150px;
+  }
+  .navlistitem {
+    font-size: 45px;
+    padding: 5px 18px;
+  }
+  .nav a { 
+    font-size: 45px;
+  }
+  .orderInfo label {
+    font-size: 20px;
+  }
+}
