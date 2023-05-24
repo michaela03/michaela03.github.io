@@ -1,22 +1,26 @@
 # 🍽️ Restaurant Website
 
-This is the README file for the Restaurant Website project. The purpose of this project is to create a website for a restaurant that utilizes HTML5, CSS, and Bootstrap 5. The website provides users with the opportunity to explore the menu, select from options for salad, main dish, and dessert, and includes a form for payment and a contact page with a map. The homepage features enticing food photos and a button to place an order. The website also utilizes JavaScript and jQuery for validation when choosing dishes.
+This is the README file for the Restaurant Website project hosted on GitHub Pages. The purpose of this project is to create a website for a restaurant that utilizes HTML5, CSS, and Bootstrap 5. The website provides users with the opportunity to explore the menu, select from options for salad, main dish, and dessert, and includes a form for payment and a contact page with a map. The homepage features enticing food photos and a button to place an order. The website also utilizes JavaScript and jQuery for validation when choosing dishes.
+
+## Website URL 🌐
+
+The Restaurant Website is hosted on GitHub Pages and can be accessed at [https://michaela03.github.io/](https://michaela03.github.io/).
 
 ## Features 🌟
 
-The Restaurant Website will have the following features:
+The Restaurant Website includes the following features:
 
-1. **Menu**: Users can explore the menu and choose from various options for salad, main dish, and dessert.
+- Menu: Users can explore the menu and choose from various options for salad, main dish, and dessert.
 
-2. **Order Placement**: The homepage will feature a button to place an order, directing users to the order page.
+- Order Placement: The homepage features a button to place an order, directing users to the order page.
 
-3. **Form for Payment**: The order page will include a form for users to enter payment details.
+- Form for Payment: The order page includes a form for users to enter payment details.
 
-4. **Contact Page**: The website will have a contact page that includes a map for users to locate the restaurant.
+- Contact Page: The website has a contact page that includes a map for users to locate the restaurant.
 
-5. **Food Photos**: The homepage will display enticing food photos to attract users.
+- Food Photos: The homepage displays enticing food photos to attract users.
 
-6. **Validation**: JavaScript and jQuery will be utilized to validate user inputs when choosing dishes.
+- Validation: JavaScript and jQuery are utilized to validate user inputs when choosing dishes.
 
 ## Technologies Used 💻
 
